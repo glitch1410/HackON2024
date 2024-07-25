@@ -18,7 +18,7 @@ const Card = ({allcampaign, setOpenModel, setDonate, title}) => {
 					<div onClick={() => (setDonate(campaign), setOpenModel(true))}
 					key={i + 1}
 					className="cursor-pointer border overflow-hidden transition-shadow duration-300 bg-whiterounded">
-						<img src="https://images.pexels.com/photos/932638/pexels-photo-932638.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+						<img src="https://images.pexels.com/photos/3959485/pexels-photo-3959485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 						className="object-cover w-full h-64 rounded" alt="" />
 						<div className="py-5 pl-2">
 							<p className="mb-2 text-xs font-semibold text-gray-600 uppercase">

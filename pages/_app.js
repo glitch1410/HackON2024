@@ -8,7 +8,6 @@ export default function App({ Component, pageProps }) {
 		<DonationProvider>
 		<NavBar />
 		<Component {...pageProps} />
-		<Footer />
 		</DonationProvider>
     </>
   );

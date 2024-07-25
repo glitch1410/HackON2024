@@ -1,7 +1,7 @@
 import React, {useEffect, useContext, useState} from "react";
 
 import { DonationContext } from "../Context/Donation";
-import {Hero, Card, PupUp} from "../Components"
+import {Hero, Card, PopUp} from "../Components"
 const index = () => {
   const {
 	titleData,
@@ -37,12 +37,6 @@ const index = () => {
 		<Card
 			title = "All Listed Campaign"
 			allcampaign = {allcampaign}
-			setOpenModel = {setOpenModel}
-			setDonate = {setDonateCampaign}
-		/>
-		<Card
-			title = "Your Listed Campaign"
-			allcampaign = {usercampaign}
 			setOpenModel = {setOpenModel}
 			setDonate = {setDonateCampaign}
 		/>

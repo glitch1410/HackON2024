@@ -107,9 +107,11 @@ export const DonationProvider = ({children}) => {
 	};
 
 	const getDonations = async (pId) => {
+		const web3modal = new Web3Modal();
+		const connection = await web3modal.connect();
 		const provider = new ethers.providers.Web3Provider(connection);
+		const signer = provider.getSigner();
 		const contract = fetchContract(signer);
-
 		const donations = await contract.getDonators(pId);
 		const numberOfDonations = donations[0].length;
 
